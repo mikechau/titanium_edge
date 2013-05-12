@@ -1,0 +1,25 @@
+<% content_for(:title) { "Dashing w/ Highcharts!" } %>
+
+<script type='text/javascript'>
+  $(function() {
+    Dashing.widget_base_dimensions = [310, 320]
+    Dashing.numColumns = 5
+  });
+</script>
+
+<div class="gridster">
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div style="display: table; width: 100%; height: 100%;">
+        <div data-id="welcome" data-view="Text" data-title="Hello" data-text="This is your shiny new dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
+      </div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div style="display: table; width: 100%; height: 100%;">
+        <div data-id="synergy" data-view="Meter" data-title="Synergy" data-min="0" data-max="100"></div>
+      </div>
+    </li>
+
+</div>
