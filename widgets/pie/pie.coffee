@@ -29,12 +29,12 @@ class Dashing.Pie extends Dashing.Widget
           series:
             dataLabels:
               enabled: true
-              distance: -35
+              distance: -27
               color: 'white'
               style:
-                fontSize: '15px'
+                fontSize: '15 px'
               formatter: ->
-                "" + @point.name + ": <b>" + Math.round(@percentage) + " %</b>"
+                "<b>" + @point.name + ": <br/><br/>" + Math.round(@percentage) + " %</b>"
 
         navigation:
           buttonOptions:

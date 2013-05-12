@@ -8,7 +8,7 @@ class Dashing.Highbar extends Dashing.Widget
           renderTo: $(container)[0]
           type: "column"
           backgroundColor: color
-          marginTop: 3
+          marginTop: 2
 
         title:
           text: ' '

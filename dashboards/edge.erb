@@ -1,38 +1,50 @@
 <% content_for(:title) { "Dashing w/ Highcharts!" } %>
 
 <script type='text/javascript'>
-  $(function() {
-    Dashing.widget_base_dimensions = [310, 320]
-    Dashing.numColumns = 4
-  });
+  // $(function() {
+  //   Dashing.widget_base_dimensions = [310, 320]
+  //   Dashing.numColumns = 4
+  // });
 </script>
 
 <div class="gridster">
   <ul>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
-        <div data-id="indicators_list" data-view="List" data-unordered="true" data-title="Indicators" data-moreinfo=""></div>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-id="total_transactions" data-view="Number" data-title="Transactions Executed" style="background-color:#96bf48;"></div>
+      <div data-view="Countdown" data-title="Closing In:" data-end='<%= Time.now.strftime("%B %d, %Y 15:00:00") %>'></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-view="Clock"></div>
-        <i class="icon-time icon-background"></i>
+      <div data-id="klimato" data-view="Klimato"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-view="Countdown" data-title="Closing In:" data-end='<%= Time.now.strftime("%B %d, %Y 15:00:00") %>'></div>
+      <div data-id="top_underlying" data-view="Stacker" data-title="Top 5 Underlying" style="background-color:#d35400;"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="top_exchanges" data-view="Highbar" data-title="Transactions by Exchange" style="background-color:#efad1b;"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-id="klimato" data-view="Klimato"></div>
+      <div data-id="pie_ppl" data-view="Pie" data-title="Pie Chart" style="background-color:#f39c12;"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-id="stacker_symbols" data-view="Stacker" data-title="Top 5 Underlying" style="background-color:#d35400;"></div>
+      <div data-id="total_transactions" data-view="Number" data-title="People Eating" style="background-color:#96bf48;"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="top_instruments" data-view="Horizonbarstack" data-title="Top 10 Instruments" style="background-color:#2c3e50;"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="recent_trades_list" data-title="Recent Trades" data-view="Fadelist" data-unordered="false" data-moreinfo="" style="background-color:#3498db;"></div>
     </li>
 
 </div>
