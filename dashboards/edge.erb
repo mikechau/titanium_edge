@@ -3,23 +3,36 @@
 <script type='text/javascript'>
   $(function() {
     Dashing.widget_base_dimensions = [310, 320]
-    Dashing.numColumns = 5
+    Dashing.numColumns = 4
   });
 </script>
 
 <div class="gridster">
   <ul>
 
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div style="display: table; width: 100%; height: 100%;">
-        <div data-id="welcome" data-view="Text" data-title="Hello" data-text="This is your shiny new dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
-      </div>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+        <div data-id="indicators_list" data-view="List" data-unordered="true" data-title="Indicators" data-moreinfo=""></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div style="display: table; width: 100%; height: 100%;">
-        <div data-id="synergy" data-view="Meter" data-title="Synergy" data-min="0" data-max="100"></div>
-      </div>
+        <div data-id="total_transactions" data-view="Number" data-title="Transactions Executed" style="background-color:#96bf48;"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-view="Clock"></div>
+        <i class="icon-time icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-view="Countdown" data-title="Closing In:" data-end='<%= Time.now.strftime("%B %d, %Y 15:00:00") %>'></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="klimato" data-view="Klimato"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="stacker_symbols" data-view="Stacker" data-title="Top 5 Underlying" style="background-color:#d35400;"></div>
     </li>
 
 </div>

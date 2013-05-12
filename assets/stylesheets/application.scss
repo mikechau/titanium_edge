@@ -253,3 +253,16 @@ h3 {
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
+// ----------------------------------------------------------------------------
+// MODS
+// ----------------------------------------------------------------------------
+.updated-at {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+h2 { 
+  font-size: 55px !important;
+}
