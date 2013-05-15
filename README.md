@@ -1,6 +1,6 @@
 ![Screenshot](https://dl.dropboxusercontent.com/u/50206714/Screenshots/Screenshot%20from%202013-05-12%2006%3A30%3A28.png)
 
-Check out http://shopify.github.com/dashing for more information.
+[Demo](http://titanium-edge.herokuapp.com/edge)
 
 # Getting Started
 
@@ -8,4 +8,5 @@ Check out http://shopify.github.com/dashing for more information.
 2. ```dashing start```
 3. localhost:3030/edge
 
+Check out http://shopify.github.com/dashing for more information.
 
